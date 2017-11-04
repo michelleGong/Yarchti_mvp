@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stand_margin_large">16dp</dimen>
+    <dimen name="stand_margin_small">8dp</dimen>
+    <dimen name="bedPLayout_font_bedNo">15sp</dimen>
+    <dimen name="bedPLayout_font_patientName">10sp</dimen>
+    <dimen name="bedPLayout_font_age">9sp</dimen>
+    <dimen name="font_textSize_Big">28sp</dimen>
+    <dimen name="font_textSize_Small">18sp</dimen>
+</resources>

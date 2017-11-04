@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="icu.yardward.com.themvp_architecture.archti_3_mvp_databinding.bean.Bed"/>
+        <variable
+            type="Bed"
+            name="beditem"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="@dimen/stand_margin_small"
+        android:background="@drawable/recycler_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <TextView
+            android:id="@+id/tv_bedNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="13床"
+            android:textSize="@dimen/bedPLayout_font_bedNo"
+            android:layout_marginBottom="@dimen/stand_margin_large"
+            android:text="@{beditem.bedName}"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="王小丫"
+            android:textSize="@dimen/bedPLayout_font_patientName"
+            android:layout_below="@id/tv_bedNo"
+            android:text="@{beditem.currentpatient.patientName}"
+            />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="13岁"
+            android:textSize="@dimen/bedPLayout_font_age"
+            android:layout_below="@id/tv_bedNo"
+            android:layout_alignParentRight="true"
+            android:text="@{String.valueOf(beditem.currentpatient.patientAge)}"/>
+
+    </RelativeLayout>
+
+</layout>
+

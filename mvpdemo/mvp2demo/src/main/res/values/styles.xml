@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/bg_btn_common_selector</item>
+    </style>
+
+
+    <style name="LabelTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">6sp</item>
+        <item name="android:textColor">@color/colorSecondary_text</item>
+    </style>
+
+    <style name="MyEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary_text</item>
+        <item name="android:paddingTop">@dimen/stand_margin_small</item>
+        <item name="android:paddingBottom">@dimen/stand_margin_small</item>
+    </style>
+
+
+
+</resources>

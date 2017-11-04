@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">themvp_architecture</string>
+    <string name="label_checkPatient">病人详情</string>
+    <string name="label_editPatient">编辑病人</string>
+    <string name="label_patientIn">病人入院</string>
+    <string name="label_patientName">病人姓名</string>
+    <string name="label_patientAge">病人年龄</string>
+    <string name="label_bed">床位</string>
+    <string name="label_inTime">入院时间</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="blank"></string>
+    <string name="label_patientId">病人ID</string>
+    <string name="label_back">返回</string>
+
+
+</resources>

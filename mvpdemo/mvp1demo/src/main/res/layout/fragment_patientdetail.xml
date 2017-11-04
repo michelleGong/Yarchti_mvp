@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class = ".MyCustom">
+        <import type="icu.yardward.com.themvp_architecture.archti_3_mvp_databinding.bean.Bed"></import>
+        <variable
+            name="currentbed"
+            type="Bed"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:id="@+id/tv_bedNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text= "01床"
+            android:text="@{currentbed.bedName}"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="@dimen/font_textSize_Big"
+            android:layout_margin="@dimen/stand_margin_large"
+            />
+
+
+        <TextView android:id="@+id/tv_patientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@{currentbed.currentpatient.patientName}"
+            android:textSize="@dimen/font_textSize_Small"
+            android:layout_margin="@dimen/stand_margin_large"
+            />
+
+        <TextView android:id="@+id/tv_patientAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@{currentbed.currentpatient.patientAge == 0 ?@string/blank : String.valueOf(currentbed.currentpatient.patientAge)}"
+            android:textSize="@dimen/font_textSize_Small"
+            android:layout_margin="@dimen/stand_margin_large"
+            />
+
+        <TextView android:id="@+id/tv_inTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@{currentbed.currentpatient.inTime}"
+            android:textSize="@dimen/font_textSize_Small"
+            android:layout_margin="@dimen/stand_margin_large"
+            />
+
+    </LinearLayout>
+
+
+</layout>
+

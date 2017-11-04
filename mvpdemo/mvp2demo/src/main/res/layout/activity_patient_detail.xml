@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/layout"
+    >
+
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/label_checkPatient"
+        style="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_marginBottom="@dimen/stand_margin_small"/>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhitebg"
+        android:translationZ="8dp"
+        android:outlineProvider="bounds"
+        android:padding="@dimen/stand_margin_large">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout_patientName"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_patientName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_patientName"
+                >
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout_patientAge"
+            android:layout_below="@id/textInputLayout_patientName"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_patientAge"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_patientAge"
+                android:inputType="number"
+                >
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout_patientBed"
+            android:layout_below="@id/textInputLayout_patientAge"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_patientBed"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_bed"
+                >
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout_InTime"
+            android:layout_below="@id/textInputLayout_patientBed"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_patientInTime"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_inTime"
+                >
+
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textInputLayout_InTime">
+
+
+            <Button
+                android:id="@+id/bt_changeSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fake o"
+                android:layout_marginTop="@dimen/stand_margin_large"
+                android:layout_marginRight="@dimen/stand_margin_large"
+                android:background="@drawable/bg_btn_common_selector"/>
+
+            <Button
+                android:id="@+id/bt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edit"
+                android:layout_marginTop="@dimen/stand_margin_large"
+                android:background="@drawable/bg_btn_common_selector"
+                android:layout_marginRight="@dimen/stand_margin_large"/>
+
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:layout_marginTop="@dimen/stand_margin_large"
+                android:background="@drawable/bg_btn_common_selector"
+                android:layout_marginRight="@dimen/stand_margin_large"/>
+
+            <Button
+                android:id="@+id/bt_In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN"
+                android:layout_marginTop="@dimen/stand_margin_large"
+                android:background="@drawable/bg_btn_common_selector"/>
+
+        </LinearLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/bt_addPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_add"
+            android:background="@android:color/transparent"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
